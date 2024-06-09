@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; /* 白色 */
+}
+
+.flag {
+    width: 200px;
+    height: 120px;
+    background-color: #d7003a; /* 赤色 */
+    position: relative;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff; /* 白色 */
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
