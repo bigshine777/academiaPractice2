@@ -1,1 +1,107 @@
+.japan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.japan-base {
+    border: 1px solid #000;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.japan-sun {
+    border-radius: 100%;
+    background-color: red;
+    height: 60%;
+    aspect-ratio: 1/1;
+}
+
+.UAE {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.UAE-base {
+    border: 1px solid #000;
+    width: 500px;
+    height: 250px;
+    display: flex;
+}
+
+.UAE-right-partial {
+    background-color: red;
+    width: 25%;
+}
+
+.UAE-left-partial {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.UAE-green {
+    background-color: green;
+    height: 33.33%;
+}
+
+.UAE-white {
+    background-color: white;
+    height: 33.33%;
+}
+
+.UAE-black {
+    background-color: black;
+    height: 33.33%;
+}
+
+.korean {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.korean-base {
+    border: 1px solid #000;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.korean-circle {
+    position: relative;
+    height: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.korean-circle-red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: red;
+    clip-path: inset(0 0 50% 0);
+    transform: rotate(0.58rad);
+    transform-origin: center;
+}
+
+.korean-circle-blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: blue;
+    clip-path: inset(50% 0 0 0);
+    transform: rotate(0.58rad);
+    transform-origin: center;
+}
