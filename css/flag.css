@@ -80,7 +80,7 @@
     aspect-ratio: 1 / 1;
 }
 
-.korean-circle-red {
+.korean-circle .circle-red {
     position: absolute;
     top: 0;
     left: 0;
@@ -93,7 +93,7 @@
     transform-origin: center;
 }
 
-.korean-circle-blue {
+.korean-circle .circle-blue {
     position: absolute;
     top: 0;
     left: 0;
@@ -104,4 +104,46 @@
     clip-path: inset(50% 0 0 0);
     transform: rotate(0.58rad);
     transform-origin: center;
+}
+
+.korean-circle .circle-red-small {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: red;
+    transform: rotate(0.58rad);
+    transform-origin: 100% 50%;
+}
+
+.korean-circle .circle-blue-small {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: blue;
+    transform: rotate(0.58rad);
+    transform-origin: 0 50%;
+}
+
+.rightUP-partial {
+    padding: 0;
+    height: calc(100% / 6);
+    width: calc(100% / 6);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.rightUP-partial .block {
+    background-color: #777777;
+    height: 25%;
+}
+
+.rightUP-partial .block:not(:last-child) {
+    margin-bottom: calc(100%/12);
 }
