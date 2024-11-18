@@ -67,11 +67,12 @@
 
 .korean-base {
     border: 1px solid #000;
-    width: 400px;
-    height: 300px;
+    width: 720px;
+    height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .korean-circle {
@@ -130,20 +131,59 @@
     transform-origin: 0 50%;
 }
 
-.rightUP-partial {
+.partial {
     padding: 0;
     height: calc(100% / 6);
     width: calc(100% / 6);
-    position: relative;
+    position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    translate: -50% -50%;
+    transform-origin: 50% 350%;
 }
 
-.rightUP-partial .block {
+.leftUP{
+    transform: rotate(-0.98rad);
+}
+
+.rightUP{
+    transform: rotate(0.98rad);
+}
+
+.rightDown{
+    transform: rotate(-2.16rad);
+}
+
+.leftDown{
+    transform: rotate(2.16rad);
+}
+
+.big-block {
     background-color: #777777;
+    height: 25%;
+    width: 100%;
+}
+
+.big-block:not(:last-child) {
+    margin-bottom: calc(100%/12);
+}
+
+.small-block {
+    background-color: #777777;
+    height: 100%;
+    width: calc(550%/12);
+}
+
+.small-block:not(:last-child) {
+    margin-right: calc(100%/12);
+}
+
+.small-blocks{
+    display: flex;
+    width: 100%;
     height: 25%;
 }
 
-.rightUP-partial .block:not(:last-child) {
+.small-blocks:not(:last-child){
     margin-bottom: calc(100%/12);
 }
