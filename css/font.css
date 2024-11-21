@@ -24,10 +24,30 @@
     font-style: italic;
 }
 
-.test-fonts{
+.test-fonts {
     margin-bottom: 20px;
 }
 
-.fa-twitter{
+.fa-twitter {
     font-size: 200px;
+}
+
+.search::before {
+    content: "\f002";
+    font-family: "Font Awesome 6 Free";
+}
+
+.fa-circle-notch {
+    animation: spin 1s linear infinite;
+}
+
+/* 回転アニメーション */
+@keyframes spin {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
 }
